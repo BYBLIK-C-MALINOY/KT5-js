@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Машинка</title>
+
+    <style>
+        body {
+            background: url('https://png.klev.club/uploads/posts/2024-05/png-klev-club-pfiy-p-doroga-tekstura-png-8.png');
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .moon {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+            border-radius: 50%;
+        }
+
+        .car {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            left: -200px;
+            bottom: 20px;
+            animation: drive 5s ease-in-out forwards;
+            border-radius: 10px;
+        }
+
+        .roof {
+            position: absolute;
+            width: 100px;
+            /* Ширина крыши */
+            height: 80px;
+            /* Высота крыши */
+            background-color: red;
+            /* Цвет крыши */
+            border-radius: 10px;
+            /* Закругленные углы */
+            top: -30px;
+            /* Положение крыши */
+            left: 100px;
+            /* Положение крыши */
+        }
+        .roof1 {
+            position: absolute;
+            width: 80px;
+            /* Ширина крыши */
+            height: 40px;
+            /* Высота крыши */
+            background-color: rgb(28, 170, 214);
+            /* Цвет крыши */
+            border-radius: 10px;
+            /* Закругленные углы */
+            top: -28px;
+            /* Положение крыши */
+            left: 115px;
+            /* Положение крыши */
+        }
+
+
+        .wheel {    
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -20px;
+        }
+
+        .wheel1 {
+            left: 20px;
+        }
+
+        .wheel2 {
+            right: 20px;
+        }
+
+
+        @keyframes drive {
+            to {
+                left: calc(100vw - 250px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="moon"></div>
+    <div class="car">
+        <div class="roof"></div>
+        <div class="roof1"></div>
+        <div class="wheel wheel1"></div>
+        <div class="wheel wheel2"></div>
+    </div>
+
+
+</body>
+
+</html>
